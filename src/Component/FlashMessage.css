@@ -1,0 +1,47 @@
+.flash-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 250px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease;
+  z-index: 999;
+}
+
+.flash-message button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.flash-message.success {
+  background-color: #22c55e;
+}
+
+.flash-message.error {
+  background-color: #ef4444;
+}
+
+.flash-message.warning {
+  background-color: #f59e0b;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

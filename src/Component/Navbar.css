@@ -1,0 +1,50 @@
+.mini-nav {
+  height: 60px;
+  padding: 0 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mini-nav-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.mini-nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.mini-btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+
+.mini-btn.clear {
+  background: #f1f2f6;
+  color: #333;
+  text-decoration: none;
+}
+
+.mini-btn.clear:hover {
+  background: #dfe4ea;
+}
+
+
+.mini-btn.logout {
+  background: #ff6b6b;
+  color: white;
+}
+
+.mini-btn.logout:hover {
+  background: #ff4757;
+}
