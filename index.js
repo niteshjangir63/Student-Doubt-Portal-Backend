@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT;
 const cors = require("cors");
 const connectDB = require("./initDb");
 
@@ -20,7 +21,7 @@ app.use("/doubts", doubts);
 app.use("/",otp)
 app.use("/",passwordUpdate)
 
-app.listen(8080,()=>{
+app.listen(PORT,()=>{
 
     console.log("app is listening..")
 })
