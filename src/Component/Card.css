@@ -1,0 +1,109 @@
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+.card-subtitle {
+  margin: 6px 0 12px;
+  color: #666;
+  font-size: 14px;
+}
+
+.card-body {
+  font-size: 15px;
+  color: #333;
+}
+
+
+.card-footer {
+margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+.card-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.card-status.pending {
+  background: #ffeaa7;
+  color: #8d6e00;
+}
+
+.card-status.answered {
+  background: #c8f7dc;
+  color: #1e7f4f;
+}
+
+
+
+.editBtn,
+.deleteBtn {
+  position: absolute;
+  bottom: 10px;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+
+.editBtn {
+  right: 40px;
+  color: #2563eb;
+}
+
+.deleteBtn {
+  right: 10px;
+  color: #ef4444;
+}
+
+
+.card:hover .editBtn,
+.card:hover .deleteBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.editBtn:hover {
+  color: #1d4ed8;
+}
+
+.deleteBtn:hover {
+  color: #dc2626;
+}
+
+
